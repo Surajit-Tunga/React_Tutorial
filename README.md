@@ -120,35 +120,7 @@ export default App;
 - **Customization:** Customize behavior and appearance of child components from the parent.
 - **Unidirectional Data Flow:** Props enable the top-down flow of data in React, keeping your application predictable and easier to debug.
 
----
 
-## How to Use Props
-
-### 1. Passing Props
-
-You pass props to a component as attributes in JSX.
-
-```jsx
-function Welcome(props) {
-  return <h1>Hello, {props.name}!</h1>;
-}
-
-// Usage in a parent component:
-<Welcome name="Alice" />
-<Welcome name="Bob" />
-```
-
-### 2. Accessing Props
-
-Inside the child component, you can access the props via the `props` object (for functional components) or via `this.props` (for class components).
-
-#### Functional Component Example
-
-```jsx
-function Greeting(props) {
-  return <p>Good {props.timeOfDay}, {props.name}!</p>;
-}
-```
 ---
 ## Official Documentation
 
