@@ -120,7 +120,7 @@ export default App;
 - **Customization:** Customize behavior and appearance of child components from the parent.
 - **Unidirectional Data Flow:** Props enable the top-down flow of data in React, keeping your application predictable and easier to debug.
 
-
+- Check-out my-app to see uses of props
 ---
 ## Official Documentation
 
