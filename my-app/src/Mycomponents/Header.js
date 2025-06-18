@@ -30,6 +30,10 @@ export default function Header(props) {
   );
 }
 
-Header.defaultsprops = {
+Header.defaultProps = {
    title: "YourToDo"
+}
+
+Header.propTypes = {
+  title: PropTypes.string
 }
