@@ -22,3 +22,4 @@ it will take some time.
 now to run the app: go to app's terminal and run
 
 npm start
+
