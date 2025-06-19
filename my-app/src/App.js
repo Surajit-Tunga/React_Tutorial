@@ -27,23 +27,8 @@ function App() {
     setTodos([...todos, myTodo]) //It updates the todos state by creating a new array that includes all previous todos plus the new myTodo item at the end.
   }
 
-  const [todos, setTodos] = useState([  // react hook
-    // {
-    //   sno: 1,
-    //   title: "Go to the market",
-    //   desc: " you need to go market"
-    // },
-    // {
-    //   sno: 2,
-    //   title: "Go to the mall",
-    //   desc: " you need to go market"
-    // },
-    // {
-    //   sno: 3,
-    //   title: "Go to the ghat ",
-    //   desc: " you need to go market"
-    // },    
-  ]);
+  const [todos, setTodos] = useState([]); // react hook
+    
   return (
     <>
       <Header title='MyToDoList'/>
