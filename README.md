@@ -186,16 +186,6 @@ There are several ways to add CSS to your React application:
 
   ---
 
-  ## React Router
-
-  -Helps to Change Pages without Reloding.
-
-  ### Steps:
-  -Downlod react-router-dom 
-  ```bash
-   npm install react-router-dom
-  ```
-  ---
 
 ## Official Documentation
 
