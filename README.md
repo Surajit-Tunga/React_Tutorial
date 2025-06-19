@@ -122,6 +122,70 @@ export default App;
 
 - Check-out my-app to see uses of props
 ---
+## Using Hooks in React
+
+- **Hooks** are functions that let you use state and other React features in functional components.
+- The most commonly used hook is `useState`:
+  ```jsx
+  import React, { useState } from 'react';
+
+  function Example() {
+    const [count, setCount] = useState(0);
+
+    return (
+      <div>
+        <p>You clicked {count} times</p>
+        <button onClick={() => setCount(count + 1)}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+  ```
+  ---
+## Adding CSS in React
+
+There are several ways to add CSS to your React application:
+
+### Inline Styling (JavaScript Object)
+
+- Define a JavaScript object with CSS properties and pass it to the `style` prop.
+- Example:
+  ```jsx
+  // Create a style object in your component
+  let footerStyle = {
+    position: "absolute",
+    top: "94.3vh",
+    width: "100%"
+  };
+
+  return (
+    <footer className='bg-dark text-light py=3' style={footerStyle}>
+      <p className="text-center">Copyright &copy; MyToDoList.com</p>
+    </footer>
+  );
+  ```
+- Property names use camelCase (e.g. `backgroundColor` not `background-color`).
+
+### CSS Files
+- Create a `.css` file and import it:
+  ```css
+  /* App.css */
+  .myClass {
+    color: blue;
+    background-color: lightgrey;
+  }
+  ```
+  ```jsx
+  import './App.css';
+
+  function App() {
+    return <div className="myClass">Styled by CSS file</div>;
+  }
+  ```
+
+  ---
+
 ## Official Documentation
 
 - [React Documentation](https://react.dev/)
