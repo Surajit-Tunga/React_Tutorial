@@ -195,6 +195,7 @@ There are several ways to add CSS to your React application:
   ```bash
    npm install react-router-dom
   ```
+  -See app.js for example.
   ---
 
 ## Official Documentation
