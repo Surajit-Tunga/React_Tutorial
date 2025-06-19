@@ -1,9 +1,15 @@
 import React from 'react';
 
-export default function Header() {
+export default function Footer() {
+  let footerstyle ={
+    position: "absolute",
+    top: "94.3vh",
+    width: "100%"
+
+  }
   return (
-    <div>
-        This is footer:
-    </div>
+    <footer className='bg-dark text-light py=3' style={footerstyle}>
+        <p className="text-center " >Copyright &copy; MyToDoList.com</p>
+    </footer>
   );
 }
