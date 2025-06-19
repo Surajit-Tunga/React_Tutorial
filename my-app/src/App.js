@@ -4,6 +4,12 @@ import Todos from './Mycomponents/Todos';
 import Footer from './Mycomponents/Footer';
 import Addtodo from './Mycomponents/Addtodo';
 import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   const onDelete=(todo)=> {   // react hook
