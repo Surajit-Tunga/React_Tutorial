@@ -11,27 +11,43 @@ function App() {
       return e!== todo;  //e !== todo: Keeps all items that do not equal the one you passed in.
     }))
   } 
+
+  const addtodo=(title, desc) =>{
+    let s_no; 
+    if (todos.length===0) {
+      s_no=0;
+    } else {
+      s_no = todos[todos.length-1].sno+1; // .sno Gets its serial number
+    }
+    const myTodo ={
+      sno:s_no,
+      title: title,
+      desc:desc,
+    }
+    setTodos([...todos, myTodo]) //It updates the todos state by creating a new array that includes all previous todos plus the new myTodo item at the end.
+  }
+
   const [todos, setTodos] = useState([  // react hook
-    {
-      sno: 1,
-      title: "Go to the market",
-      desc: " you need to go market"
-    },
-    {
-      sno: 2,
-      title: "Go to the mall",
-      desc: " you need to go market"
-    },
-    {
-      sno: 3,
-      title: "Go to the ghat ",
-      desc: " you need to go market"
-    },    
+    // {
+    //   sno: 1,
+    //   title: "Go to the market",
+    //   desc: " you need to go market"
+    // },
+    // {
+    //   sno: 2,
+    //   title: "Go to the mall",
+    //   desc: " you need to go market"
+    // },
+    // {
+    //   sno: 3,
+    //   title: "Go to the ghat ",
+    //   desc: " you need to go market"
+    // },    
   ]);
   return (
     <>
       <Header title='MyToDoList'/>
-      <Addtodo/>
+      <Addtodo addtodo={addtodo}/>
       <Todos Todos={todos} onDelete={onDelete}/>
       <Footer/> 
     </>

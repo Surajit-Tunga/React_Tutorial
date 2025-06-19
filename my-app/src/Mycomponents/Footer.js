@@ -2,8 +2,8 @@ import React from 'react';
 // import './folder.css' to use external css
 export default function Footer() {
   let footerstyle ={  // this how to use css
-    position: "absolute",
-    top: "110vh",
+    position: "relative",
+    top: "100vh",
     width: "100%"
 
   }
